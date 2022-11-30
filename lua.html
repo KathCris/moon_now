@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" id="css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <title>MoonNow - lua</title>
+</head>
+<body class="body_lua">
+    <div class="flex_sup container_tela2">
+        <div class="flex_sup container_header">
+            <div class="flex_sup container_logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="flex_sup container_btn_header">
+                <p>Quem somos</p>
+                <p>Nosso propósito</p>
+                <p>Suporte</p>
+            </div>
+        </div>
+
+        <div class="flex_sup container_body">
+            <div class="flex_sup container_img_foguete">
+                <img src="img/foguete.png" class="img_foguete" alt="">
+            </div>
+            <div class="flex_sup container_total_mensagem">
+                <h2 id="titulo">PARABÉNS, FULANO!</h2>
+                <div class="flex_sup container_mensagem">
+                    <p style="margin-bottom: 35px;">
+                        Você está a um passo da sua <br>
+                        <b>Jornada Espacial!</b>
+                    </p>
+                    <p> 
+                        Para continuar essa aventura verifique <br>
+                        os pré-requisitos
+                    </p>
+                </div>
+                <div class="flex_sup container_btn_requisitos">
+                    <button class="btn_requisitos" onclick="download()">FAÇA O DOWNLOAD DOS PRÉ-REQUISITOS!</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex_sup container_footer">
+            <div class="flex_sup container_modos">
+                <label class="switch">
+                    <input type="checkbox" onclick="tema()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    const params = new URLSearchParams(window.location.search)
+    var nome = params.get('nome')
+    var config = params.get('config')
+    var css = document.getElementById("css")
+    css.setAttribute("href",config)
+    document.getElementById("titulo").innerHTML = '<h2 id="titulo">PARABÉNS, '+ nome +'!</h2>'
+
+    
+
+    function download() {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'prerequisitos.zip');
+        element.setAttribute('download', 'arquivo');
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+    }
+
+    function tema(){
+        if(css.getAttribute("href") == "style.css"){
+            css.setAttribute("href","style1.css")
+        }else{
+            css.setAttribute("href","style.css")
+        }
+    }
+
+</script>

@@ -1,0 +1,335 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.body_home{
+    background: linear-gradient(136.31deg, #0C0F07 14.16%, #1F102B 53.39%, #23193E 82.63%)!important;
+}
+.flex_sup{
+    display: flex;
+}
+
+/* body{
+    background: linear-gradient(136.31deg, #0C0F07 14.16%, #1F102B 53.39%, #23193E 82.63%);
+} */
+
+/* .parte1{
+    background: linear-gradient(92.5deg, #4677FF 24.94%, #27144A 117.02%);
+    transform: matrix(0.61, 0.73, -0.88, 0.58, 0, 0);
+    z-index: 15;
+    min-height: 100vh;
+    min-width: 100vh;
+    position: absolute;
+
+}
+.parte2{
+    background: linear-gradient(136.31deg, #0C0F07 14.16%, #1F102B 53.39%, #23193E 82.63%);
+    z-index: 1;
+    min-height: 100vh;
+    min-width: 100vh;
+    position: absolute;
+} */
+
+.container_tela{
+    background: linear-gradient(136.31deg, #0C0F07 14.16%, #1F102B 53.39%, #23193E 82.63%);
+    min-height: 100vh;
+    width:100%;
+    flex-direction: column;
+    z-index: 15;
+    position: absolute;
+}
+.container_tela2{
+    flex-direction: column;
+}
+
+.container_header{
+    width: 100%;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.container_btn_header p{
+    font-family: 'Baloo Bhaina 2';   
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #E0DAED;
+
+    padding: 0px 80px 0px 0px;
+}
+.container_btn_header p:hover{
+    color: #4F008B;
+    cursor: pointer;
+}
+
+.container_body{
+    margin-top: 2%;
+}
+
+.container_form{
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    
+    /* padding: 0px 90px; */
+}
+.container_form h1{
+    width: 60%;
+    font-family: 'Baloo Bhaina 2';   
+    line-height: 50px; 
+    font-size: 44px;
+
+    text-align: center;    
+}
+/* Gradiente na font */
+.container_form h1{
+    background: linear-gradient(95.4deg, #9F7FDB 0.42%, #BDBFF7 46.87%, #6B26EC 81.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
+}
+
+.container_inputs{
+    flex-direction: column;
+
+    width: 50%;
+
+}
+.container_inputs input{
+    background: #9F7FDB;
+    /* border-color: #9F7FDB; */
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    color: #fff;
+
+    margin: 20px 0px;
+}
+.container_inputs input::placeholder{
+    color: #270036;
+    padding: 10px;
+    font-family: 'Baloo Bhaina 2';    
+
+}
+
+.container_img_homem_foguete{
+    /* width: 40%; */
+    align-items: center;
+    flex-direction: column;
+}
+.container_img_homem_foguete h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-family: 'Baloo Bhaina 2';   
+    line-height: 50px; 
+    font-size: 28px;
+
+    text-align: center;    
+
+    background: linear-gradient(95.4deg, #9F7FDB 0.42%, #BDBFF7 46.87%, #6B26EC 81.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img_homem_foguete{
+    width: 80%;
+}
+
+.container_btn{
+    z-index: 80;
+    width: 50%;
+    justify-content: space-between;
+}
+.btn_lua{
+    background: linear-gradient(180deg, #7834F3 0%, #411196 100%);
+    border-radius: 8px;
+    border: none;
+    font-family: 'Baloo Bhaina 2';  
+    font-weight: 700; 
+    color: #E9E1FD;
+    padding: 20px;
+
+}
+.btn_infos{
+    background: linear-gradient(180deg, #EFE9FA 0%, #755CA3 100%);
+    border-radius: 8px;
+    border: none;
+    font-family: 'Baloo Bhaina 2';   
+    color: #403658;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.btn_infos:hover{
+    background: linear-gradient(180deg, #7834F3 0%, #411196 100%);
+    color: #E9E1FD;
+}
+.btn_lua:hover{
+    background: linear-gradient(180deg, #EFE9FA 0%, #755CA3 100%); 
+    color: #403658;
+}
+
+.container_footer{
+    z-index: 15;
+    width: 100%;
+    position: absolute;
+
+    bottom: 0;
+    justify-content: flex-end;
+    /* margin: 0px 20px 20px 0px; */
+}
+
+
+
+/* ================================== CSS DA LUA ============================================== */
+
+.body_lua{
+    background: linear-gradient(136.31deg, #0C0F07 14.16%, #1F102B 53.39%, #23193E 82.63%);
+}
+.container_img_foguete{
+    position: absolute;
+    bottom: 0;
+}
+
+.container_total_mensagem{
+    margin: 2% 0px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container_total_mensagem h2{
+    width: 100%;
+    font-family: 'Baloo Bhaina 2';   
+    line-height: 50px; 
+    font-size: 44px;
+
+    text-align: center;    
+}
+/* Gradiente na font */
+.container_total_mensagem h2{
+    background: linear-gradient(95.4deg, #9F7FDB 0.42%, #BDBFF7 46.87%, #6B26EC 81.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
+}
+
+.container_mensagem{
+    margin: 40px 0px;
+    padding: 15px;
+    flex-direction: column;
+    width: 582px;
+    /* height: 200px; */
+    left: 356px;
+    top: 386px;
+
+    background: linear-gradient(151.93deg, #4677FF 25.82%, #27144A 93.13%);
+    /* opacity: 0.45; */
+    border-radius: 30px;
+}
+.container_mensagem p{
+    font-family: 'Baloo Bhaina 2';   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #FFF;
+
+}
+
+.container_btn_requisitos{
+    width: 100%;
+    justify-content: center;
+
+    margin: 5px 0px;
+}
+
+.btn_requisitos{
+    width: 54%;
+    background: linear-gradient(180deg, #EFE9FA 0%, #755CA3 100%);
+    border-radius: 8px;
+    border: none;
+    font-family: 'Baloo Bhaina 2';   
+    color: #403658;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.btn_requisitos:hover{
+    background: linear-gradient(180deg, #7834F3 0%, #411196 100%)!important;
+    color: #E9E1FD;
+}
+
+
+
+
+/* ================================= toggle ================================================== */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* =================================== @ MEDIAS =============================================== */
